@@ -9,17 +9,40 @@
 
 <body>
     <script>
-        // fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
-        //     .then(response => response.json())
-        //     .then(data => document.write(JSON.stringify(data)));
+        fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
+            .then(response => response.json())
+            .then(data => {
+                document.write("1"+JSON.stringify(new Date()) + '<br>')
 
-        // fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
-        //     .then(response => response.json())
-        //     .then(data => data.forEach(item => { 
-        //         document.write('<h2>' + item.titulo + '</h2>') 
-        //         document.write('<p>' + item.peso + '</p>') 
-        //         document.write('<br>') 
-        //     }))
+                fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
+                    .then(response => response.json())
+                    .then(data => document.write("3"+JSON.stringify(new Date()) + '<br>'));
+
+                fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
+                    .then(response => response.json())
+                    .then(data => document.write("4"+JSON.stringify(new Date()) + '<br>'));
+            });
+
+        fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
+            .then(response => response.json())
+            .then(data => {
+                document.write("2"+JSON.stringify(new Date()) + '<br>')
+
+                fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
+                    .then(response => response.json())
+                    .then(data => document.write("5"+JSON.stringify(new Date()) + '<br>'));
+            });
+
+            
+        fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
+            .then(response => response.json())
+            .then(data => {
+                document.write("6"+JSON.stringify(new Date()) + '<br>')
+
+                fetch('https://63e7c552ac3920ad5be36b95.mockapi.io/produtos')
+                    .then(response => response.json())
+                    .then(data => document.write("7"+JSON.stringify(new Date()) + '<br>'));
+            });
 
     </script>
 </body>
